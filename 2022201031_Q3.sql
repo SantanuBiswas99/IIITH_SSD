@@ -1,2 +1,0 @@
-select manager.Mgr_ssn, count(manager.Mgr_ssn) from (Select Mgr_ssn from DEPARTMENT where Dnumber in (Select Dnum from PROJECT where Pname = "ProductY")) as manager join WORKS_ON as working
- where manager.Mgr_ssn = working.Essn group by manager.Mgr_ssn;
