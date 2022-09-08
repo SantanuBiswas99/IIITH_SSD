@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Records</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <h1>Student Records</h1>
+      <input class="nameandrno" type="text" id="rno" placeholder="Roll No.">
+      <input class="nameandrno" type="text" id="fname" placeholder="Student Name">
+      <button class="Addnew" type="button" onclick="addrow()">Add New</button>
+      <table class="Tablestart">
+        <thead>
+          <tr>
+            <th>Roll No.</th>
+            <th>Student Name</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button class="Delrow" type="button" onclick="delrow()">Delete Last Record</button><br>
+      <script>
+        function addrow() {
+          var name = document.getElementById("fname").value;
+          var rollno = document.getElementById("rno").value;
+
+          if(name != "" && rollno != ""){
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(-1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = rollno;
+            cell2.innerHTML = name;
+            document.getElementById("fname").value = "";
+            document.getElementById("rno").value = "";
+          }
+          else{
+            alert("Please fill all the mandotary feilds");
+          }
+        }
+        function  delrow(){
+          document.getElementById("myTable").deleteRow(-1);
+        }
+      </script>
+    </div>
+  </body>
+</html>

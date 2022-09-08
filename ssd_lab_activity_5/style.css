@@ -1,0 +1,156 @@
+body{
+  text-align: center;
+  background-color: #EEE3CB;
+  font-family: Arial;
+}
+
+h1{
+  margin-top: 100px;
+}
+
+
+
+
+
+.container{
+  margin: 50px auto 200px;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 5px 10px #888888;
+}
+
+.Userinput{
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.character{
+  height: 30px;
+  border: 1px solid #A2B38B;
+  border-radius: 20px;
+}
+.character:hover{
+  border: 1px solid #2C3333;
+  border-radiucolor: #fff;s: 20px;
+}
+
+.Login{
+  padding: 50px;;
+}
+
+.form-submit-button {
+  height: 40px;
+  width: 100px;
+  background: #89CFFD;
+  color: #fff;
+  /* border: 1px solid #eee; */
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+.form-submit-button:hover {
+  background: #016ABC;
+  color: #fff;
+  /* border: 1px solid #eee; */
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table, th, td {
+
+ border: 1px solid white;
+ border-collapse: collapse;
+ width: 500px;
+}
+
+thead{
+  background: #B1D7B4;
+}
+
+tbody{
+  background: #E4D192;
+}
+
+td{
+  padding: 10px;
+}
+
+th{
+  padding: 10px;
+}
+
+
+.Tablestart{
+  margin-top: 50px;
+  margin-left: 37.5%;
+}
+
+.nameandrno{
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 30px;
+  width: 200px;
+}
+
+.Addnew{
+  height: 40px;
+  width: 100px;
+  background: #5BB318;
+  color: #fff;
+  text-shadow: none;
+}
+
+.Addnew:hover{
+  background: #2B7A0B;
+  color: #fff;
+  text-shadow: none;
+}
+
+.Delrow{
+  height: 40px;
+  width: 300px;
+  background: #FF4A4A;
+  color: #fff;
+  text-shadow: none;
+}
+
+.Delrow:hover{
+  background: #EB1D36;
+  color: #fff;
+  text-shadow: none;
+}
