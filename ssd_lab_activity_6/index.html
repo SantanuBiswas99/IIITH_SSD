@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Doogle Forms</title>
+    <link rel="stylesheet" href="mystyle.css">
+     <script src="index.js"></script>
+  </head>
+  <body >
+    <h1>Team Form</h1>
+    <div class="formcontainer" id="bod">
+      <form name="myForm" onsubmit="validateForm()">
+        <table>
+          <tr>
+            <td><label id = "ele1" for="mname">Manager Name</label></td>
+            <td><input id = "ele2" type="text" id="mname"></td>
+          </tr>
+          <tr>
+            <td><label id = "ele3" for="email">Group email</label></td>
+            <td><input id = "ele4" type="email" id="email"  onblur="emailValidate(email)"></td>
+          </tr>
+          <tr>
+            <td><label id = "ele5" for="uname">Server username</label></td>
+            <td><input id = "ele6" type="text" id="uname" onblur="validateUname(uname)"></td>
+          </tr>
+          <tr>
+            <td><label id = "ele7" for="spass">Server Password</label></td>
+            <td><input id = "ele8" type="password" id="spass"></td>
+          </tr>
+          <tr>
+            <td><label for="cpass">Confirm Password</label></td>
+            <td><input type="password" id="cpass" onblur=""="validatePass()"/>
+          </tr>
+          <tr>
+            <td><label for="tlead">Team Lead</label></td>
+            <td>
+              <select id="cars" name="cars">
+                <option value="Santanu">Santanu</option>
+                <option value="Mayank">Mayank</option>
+                <option value="Ardhendu">Ardhendu</option>
+                <option value="Ritwik">Ritwik</option>
+                <option value="Ayush">Ayush</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tlead">Team Members</label></td>
+            <td>
+
+                  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" width="336" height="69" color="red">
+                    <div id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69">Santanu</div>
+                    <div id="drag2" draggable="true" ondragstart="drag(event)" width="336" height="69">Ayush</div>
+                    <div id="drag3" draggable="true" ondragstart="drag(event)" width="336" height="69">Ritwik</div>
+                    <div id="drag2" draggable="true" ondragstart="drag(event)" width="336" height="69">Mayank</div>
+                    <div id="drag3" draggable="true" ondragstart="drag(event)" width="336" height="69">Ardhendu</div>
+                  </div>
+
+            </td>
+          </tr>
+        </table>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" width="336" height="69><br>
+        <div id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69">Drag here</div></div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
