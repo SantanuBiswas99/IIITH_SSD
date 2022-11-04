@@ -1,0 +1,3 @@
+Open Average : 3996.27
+High Average : 4056.26
+Low Average : 3936.02
